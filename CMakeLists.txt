@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 #project(needle C CXX)    # 3.9以前的
+set(CMAKE_CUDA_COMPILER "/usr/local/cuda/bin/nvcc")
 project(needle C CXX CUDA)  # 我们重写的。  指定编译项目，需要编译的编程语言
                             #             默认支持的语言是C, CXX (i.e. C++)。  也支持 CSharp (i.e. C#), CUDA等  3.8以后开始支持cuda
 
